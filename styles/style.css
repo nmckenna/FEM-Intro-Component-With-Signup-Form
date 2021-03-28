@@ -151,7 +151,7 @@
 }
 
 /*Desktop*/
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .site-wrapper {
         background-image: url("../images/bg-intro-desktop.png");
         background-color: var(--red);
