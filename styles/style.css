@@ -85,7 +85,7 @@
     padding-top: 0.8rem;
 }
 
-.signup-form input[type=text] {
+.signup-form-input {
     margin-top: 1.6rem;
     padding: 1.85rem 1.95rem;
     border-radius: 0.5rem;
@@ -96,26 +96,12 @@
     color: var(--darkBlue);
 }
 
-.signup-form input[type=email] {
-    margin-top: 1.6rem;
-    padding: 1.85rem 1.95rem;
-    border-radius: 0.5rem;
-    border: 0.1rem solid var(--lightGray);
-    font-weight: 600;
-    font-size: 1.4rem;
-    letter-spacing: 0.025rem;
-    color: var(--darkBlue);
-}
-
-.signup-form input[type=text]::placeholder {
+.signup-form-input::placeholder {
     color: var(--darkBlue)
 }
 
-.signup-form input[type=email]::placeholder {
-    color: var(--darkBlue)
-}
 
-.signup-form input[type=submit] {
+.signup-form-submit {
     background-color: var(--green);
     margin-top: 1.6rem;
     padding: 2rem 2rem 1.8rem;
@@ -127,6 +113,9 @@
     letter-spacing: 0.1rem;
     color: var(--white);
     text-transform: uppercase;
+    /* Fix styling on ios*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .terms-text {
@@ -219,11 +208,11 @@
         padding: 0;
     }
 
-    .signup-form input[type=text] {
+    .signup-form-input {
         margin: 2rem 0 0;
     }
 
-    .signup-form input[type=submit] {
+    .signup-form-submit {
         margin: 2rem 0 0;
     }
 
