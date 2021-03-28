@@ -5,6 +5,7 @@
     /*Colours*/
     --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
+    --lightGreen: hsl(154, 65%, 68%);
     --blue: hsl(248, 32%, 49%);
     --darkBlue: hsl(249, 10%, 26%);
     --grayishBlue: hsl(246, 25%, 77%);
@@ -116,10 +117,28 @@
     letter-spacing: 0.1rem;
     color: var(--white);
     text-transform: uppercase;
+    cursor: pointer;
     /* Fix styling on ios*/
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.signup-form-submit:focus {
+    outline: none;
+}
+
+.signup-form-submit:active {
+    background-color: var(--lightGreen);
+    box-shadow: none;
+    outline: none;
+}
+
+.signup-form-submit:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 0.2rem var(--red);
+    -moz-box-shadow: inset 0px 0px 0px 0.2rem var(--red);
+    box-shadow: inset 0px 0px 0px 0.2rem var(--red);
+}
+
 
 .terms-text {
     margin-left: 3.9rem;
